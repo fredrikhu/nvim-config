@@ -7,3 +7,5 @@ vim.cmd[[set softtabstop=0 noexpandtab]]
 
 vim.opt.termguicolors = true
 
+vim.diagnostic.config({ update_in_insert = true })
+

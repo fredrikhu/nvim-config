@@ -9,3 +9,5 @@ end)
 require'lspconfig'.csharp_ls.setup{}
 require'lspconfig'.tsserver.setup{}
 require'lspconfig'.svelte.setup{}
+
+vim.keymap.set("i", "<c-s>", vim.lsp.buf.signature_help)

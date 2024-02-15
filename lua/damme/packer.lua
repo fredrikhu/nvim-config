@@ -53,7 +53,8 @@ return require('packer').startup(function(use)
 --			{'saadparwaiz1/cmp_luasnip'},
 --			{'rafamadriz/friendly-snippets'},
 			{'L3MON4D3/LuaSnip'},
-			{'razzmatazz/csharp-language-server'}
+			{'razzmatazz/csharp-language-server'},
+			{'hrsh7th/cmp-nvim-lsp-signature-help'}
 		}
 	}
 
