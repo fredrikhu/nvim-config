@@ -9,3 +9,6 @@ vim.opt.termguicolors = true
 
 vim.diagnostic.config({ update_in_insert = true })
 
+vim.cmd[[set number]]
+vim.cmd[[set nu rnu]] -- relative line numbers
+
