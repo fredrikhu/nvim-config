@@ -12,3 +12,4 @@ vim.diagnostic.config({ update_in_insert = true })
 vim.cmd[[set number]]
 vim.cmd[[set nu rnu]] -- relative line numbers
 
+vim.cmd[[set scrolloff=15]] -- always keep 15 lines of context above/below cursor
