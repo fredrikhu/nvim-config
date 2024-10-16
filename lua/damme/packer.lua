@@ -29,7 +29,12 @@ return require('packer').startup(function(use)
 	}
 
 	use('mbbill/undotree')
-	use('tpope/vim-fugitive')
+	use({
+		'kdheepak/lazygit.nvim',
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	})
 
 	use {
 		'VonHeikemen/lsp-zero.nvim',
@@ -167,4 +172,6 @@ return require('packer').startup(function(use)
 
 	use 'razzmatazz/csharp-language-server'
 	use 'sveltejs/language-tools'
+
+	use 'ziglang/zig.vim'
 end)

@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "C:\\Users\\fredr\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1703942320\\share\\lua\\5.1\\?.lua;C:\\Users\\fredr\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1703942320\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\fredr\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1703942320\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\fredr\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1703942320\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
-local install_cpath_pattern = "C:\\Users\\fredr\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1703942320\\lib\\lua\\5.1\\?.so"
+local package_path_str = "C:\\Users\\fredr\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\share\\lua\\5.1\\?.lua;C:\\Users\\fredr\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\fredr\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\fredr\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\fredr\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -107,6 +107,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\fredr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\language-tools",
     url = "https://github.com/sveltejs/language-tools"
   },
+  ["lazygit.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\fredr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lazygit.nvim",
+    url = "https://github.com/kdheepak/lazygit.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "C:\\Users\\fredr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
@@ -118,7 +123,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["neo-tree.nvim"] = {
-    config = { "\27LJ\2\n�\5\0\0\6\0\23\0'6\0\0\0009\0\1\0009\0\2\0'\2\3\0005\3\4\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\5\0005\3\6\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\a\0005\3\b\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\t\0005\3\n\0B\0\3\0016\0\v\0'\2\f\0B\0\2\0029\0\r\0005\2\14\0005\3\16\0005\4\15\0=\4\17\0035\4\19\0005\5\18\0=\5\20\4=\4\21\3=\3\22\2B\0\2\1K\0\1\0\30default_component_configs\15git_status\fsymbols\1\0\0\1\0\t\rconflict\b\rmodified\5\fdeleted\b✖\frenamed\t󰁕\14untracked\b\nadded\5\fignored\b\runstaged\t󰄱\vstaged\b\tname\1\0\0\1\0\1\26use_git_status_colors\2\1\0\1\25close_if_last_window\2\nsetup\rneo-tree\frequire\1\0\2\ttext\t󰌵\vtexthl\23DiagnosticSignHint\23DiagnosticSignHint\1\0\2\ttext\t \vtexthl\23DiagnosticSignInfo\23DiagnosticSignInfo\1\0\2\ttext\t \vtexthl\23DiagnosticSignWarn\23DiagnosticSignWarn\1\0\2\ttext\t \vtexthl\24DiagnosticSignError\24DiagnosticSignError\16sign_define\afn\bvim\0" },
+    config = { "\27LJ\2\n�\5\0\0\6\0\23\0'6\0\0\0009\0\1\0009\0\2\0'\2\3\0005\3\4\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\5\0005\3\6\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\a\0005\3\b\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\t\0005\3\n\0B\0\3\0016\0\v\0'\2\f\0B\0\2\0029\0\r\0005\2\14\0005\3\16\0005\4\15\0=\4\17\0035\4\19\0005\5\18\0=\5\20\4=\4\21\3=\3\22\2B\0\2\1K\0\1\0\30default_component_configs\15git_status\fsymbols\1\0\1\fsymbols\0\1\0\t\14untracked\b\fdeleted\b✖\frenamed\t󰁕\nadded\5\rmodified\5\rconflict\b\vstaged\b\runstaged\t󰄱\fignored\b\tname\1\0\2\tname\0\15git_status\0\1\0\1\26use_git_status_colors\2\1\0\2\30default_component_configs\0\25close_if_last_window\2\nsetup\rneo-tree\frequire\1\0\2\ttext\t󰌵\vtexthl\23DiagnosticSignHint\23DiagnosticSignHint\1\0\2\ttext\t \vtexthl\23DiagnosticSignInfo\23DiagnosticSignInfo\1\0\2\ttext\t \vtexthl\23DiagnosticSignWarn\23DiagnosticSignWarn\1\0\2\ttext\t \vtexthl\24DiagnosticSignError\24DiagnosticSignError\16sign_define\afn\bvim\0" },
     loaded = true,
     path = "C:\\Users\\fredr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
@@ -217,17 +222,17 @@ _G.packer_plugins = {
     path = "C:\\Users\\fredr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
     url = "https://github.com/mbbill/undotree"
   },
-  ["vim-fugitive"] = {
+  ["zig.vim"] = {
     loaded = true,
-    path = "C:\\Users\\fredr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
-    url = "https://github.com/tpope/vim-fugitive"
+    path = "C:\\Users\\fredr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\zig.vim",
+    url = "https://github.com/ziglang/zig.vim"
   }
 }
 
 time([[Defining packer_plugins]], false)
 -- Config for: neo-tree.nvim
 time([[Config for neo-tree.nvim]], true)
-try_loadstring("\27LJ\2\n�\5\0\0\6\0\23\0'6\0\0\0009\0\1\0009\0\2\0'\2\3\0005\3\4\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\5\0005\3\6\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\a\0005\3\b\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\t\0005\3\n\0B\0\3\0016\0\v\0'\2\f\0B\0\2\0029\0\r\0005\2\14\0005\3\16\0005\4\15\0=\4\17\0035\4\19\0005\5\18\0=\5\20\4=\4\21\3=\3\22\2B\0\2\1K\0\1\0\30default_component_configs\15git_status\fsymbols\1\0\0\1\0\t\rconflict\b\rmodified\5\fdeleted\b✖\frenamed\t󰁕\14untracked\b\nadded\5\fignored\b\runstaged\t󰄱\vstaged\b\tname\1\0\0\1\0\1\26use_git_status_colors\2\1\0\1\25close_if_last_window\2\nsetup\rneo-tree\frequire\1\0\2\ttext\t󰌵\vtexthl\23DiagnosticSignHint\23DiagnosticSignHint\1\0\2\ttext\t \vtexthl\23DiagnosticSignInfo\23DiagnosticSignInfo\1\0\2\ttext\t \vtexthl\23DiagnosticSignWarn\23DiagnosticSignWarn\1\0\2\ttext\t \vtexthl\24DiagnosticSignError\24DiagnosticSignError\16sign_define\afn\bvim\0", "config", "neo-tree.nvim")
+try_loadstring("\27LJ\2\n�\5\0\0\6\0\23\0'6\0\0\0009\0\1\0009\0\2\0'\2\3\0005\3\4\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\5\0005\3\6\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\a\0005\3\b\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\t\0005\3\n\0B\0\3\0016\0\v\0'\2\f\0B\0\2\0029\0\r\0005\2\14\0005\3\16\0005\4\15\0=\4\17\0035\4\19\0005\5\18\0=\5\20\4=\4\21\3=\3\22\2B\0\2\1K\0\1\0\30default_component_configs\15git_status\fsymbols\1\0\1\fsymbols\0\1\0\t\14untracked\b\fdeleted\b✖\frenamed\t󰁕\nadded\5\rmodified\5\rconflict\b\vstaged\b\runstaged\t󰄱\fignored\b\tname\1\0\2\tname\0\15git_status\0\1\0\1\26use_git_status_colors\2\1\0\2\30default_component_configs\0\25close_if_last_window\2\nsetup\rneo-tree\frequire\1\0\2\ttext\t󰌵\vtexthl\23DiagnosticSignHint\23DiagnosticSignHint\1\0\2\ttext\t \vtexthl\23DiagnosticSignInfo\23DiagnosticSignInfo\1\0\2\ttext\t \vtexthl\23DiagnosticSignWarn\23DiagnosticSignWarn\1\0\2\ttext\t \vtexthl\24DiagnosticSignError\24DiagnosticSignError\16sign_define\afn\bvim\0", "config", "neo-tree.nvim")
 time([[Config for neo-tree.nvim]], false)
 -- Config for: nvim-window-picker
 time([[Config for nvim-window-picker]], true)
