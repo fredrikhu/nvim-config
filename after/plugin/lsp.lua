@@ -10,5 +10,6 @@ require'lspconfig'.csharp_ls.setup{}
 require'lspconfig'.ts_ls.setup{}
 require'lspconfig'.svelte.setup{}
 require'lspconfig'.zls.setup{}
+require'lspconfig'.clangd.setup{}
 
 vim.keymap.set("i", "<c-s>", vim.lsp.buf.signature_help)

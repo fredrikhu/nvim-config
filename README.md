@@ -7,6 +7,8 @@ npm install -g typescript typescript-language-server
 scoop install zig # treesitter requires a c compiler
 scoop install zls # install zig language server
 
+scoop install clangd
+
 # Old: 
 dotnet tool install --global csharp-ls # install dotnet language server
 # New: 

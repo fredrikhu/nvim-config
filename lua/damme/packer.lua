@@ -63,6 +63,8 @@ return require('packer').startup(function(use)
 		}
 	}
 
+	use 'ray-x/lsp_signature.nvim'
+
 	use({
 		'seblj/roslyn.nvim',
 		ft = 'cs',
@@ -174,4 +176,5 @@ return require('packer').startup(function(use)
 	use 'sveltejs/language-tools'
 
 	use 'ziglang/zig.vim'
+	use 'tikhomirov/vim-glsl'
 end)
